@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 :root {
   --foreground-rgb: 34, 34, 34;
   --background-rgb: 255, 255, 255;
@@ -21,11 +26,6 @@
     --color-point: 0, 122, 255;
   }
 }
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 /* Gothic A1 폰트 */
 .gothic-a1-regular {
   font-family: "Gothic A1", sans-serif;
