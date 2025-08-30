@@ -60,9 +60,9 @@ const Header = ({ className, ...props }: HeaderProps) => {
           "dark:bg-light/10 ",
         )}
       >
-        <Link className="no-underline" href="#top">
+        {/* <Link className="no-underline" href="#top">
           <Logo className="mr-4" />
-        </Link>
+        </Link> */}
 
         <ul className="hidden sm:flex gap-1.5 md:gap-2 items-center list-none p-0 indent-0">
           {navItems.map(({ label, id }) => (
