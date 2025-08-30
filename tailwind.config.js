@@ -4,7 +4,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -30,7 +29,6 @@ module.exports = {
     },
   },
   plugins: [],
-  // 정적 내보내기를 위한 설정
   corePlugins: {
     preflight: true,
   },
