@@ -1,8 +1,8 @@
-import Intro from '@/section/Intro'
-import SectionWatcher from '@/components/SectionWatcher'
-import Header from '@/components/Header'
-import InfoSection from '@/section/InfoSection'
-import Skill from '@/section/Skill'
+import Intro from '@/app/_section/Intro'
+import SectionWatcher from '@/app/_components/SectionWatcher'
+import Header from '@/app/_components/Header'
+import InfoSection from '@/app/_section/InfoSection'
+import Skill from '@/app/_section/Skill'
 
 export default function Home() {
   return (
