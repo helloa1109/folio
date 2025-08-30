@@ -32,4 +32,8 @@ module.exports = {
   corePlugins: {
     preflight: true,
   },
+  // 정적 내보내기를 위한 설정
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 };
