@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { infoData, InfoItem } from '@/data/InfoData';
+import { infoData } from '@/data/InfoData';
 
 export default function InfoSection() {
   return (
