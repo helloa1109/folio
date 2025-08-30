@@ -29,4 +29,8 @@ module.exports = {
     },
   },
   plugins: [],
+  // 정적 내보내기를 위한 설정
+  corePlugins: {
+    preflight: true,
+  },
 };
