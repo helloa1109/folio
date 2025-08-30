@@ -2,13 +2,13 @@
   "name": "typescript-tailwind-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://helloa1109.github.io/folio",
+  "homepage": "https://helloa1109.github.io/folio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "export": "npm run build && touch ./out/.nojekyll",
+    "export": "next build",
     "deploy": "touch out/.nojekyll && gh-pages -d out",
     "predeploy": "npm run export"
   },

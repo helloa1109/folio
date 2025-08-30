@@ -1,16 +1,12 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig = {
-  output: "export",
-  reactStrictMode: true,
+  output: "export", // ✅ next export 대체
   images: {
-    unoptimized: true,
+    unoptimized: true, // GitHub Pages에서는 이미지 최적화 안 됨
   },
-  trailingSlash: true,
-  // ✅ 중요한 부분
-  basePath: isProd ? "/folio" : "",
-  assetPrefix: isProd ? "/folio/" : "",
+  basePath: "/folio", // ✅ 레포 이름 (깃허브 주소에 맞춰줘야 함)
+  assetPrefix: "/folio/", // ✅ CSS/JS 경로 맞추기
 };
 
 module.exports = nextConfig;
