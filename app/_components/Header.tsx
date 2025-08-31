@@ -9,7 +9,6 @@ import Link from "next/link";
 
 import useOnClickOutside from "@/utils/useOnClickOutside";
 
-// Logo와 SectionWatcher는 그대로 사용한다고 가정합니다.
 // import Logo from "./Logo"; 
 import { useSectionWatch } from "./SectionWatcher";
 
@@ -58,13 +57,12 @@ const Header = ({ className, ...props }: HeaderProps) => {
           "dark:bg-light/10 ",
         )}
       >
-        {/* 로고가 필요하다면 주석을 해제하세요. */}
+        {/* 로고 */}
         {/* <Link className="no-underline mr-4" href="#top">
           <Logo />
         </Link> */}
         <div className="flex-grow"></div> {/* 로고가 없을 경우 메뉴를 오른쪽으로 밀기 위한 빈 div */}
 
-        {/* --- 데스크탑 메뉴 (구조 수정됨) --- */}
         <ul className="hidden sm:flex gap-1.5 md:gap-2 items-center list-none p-0 m-0 indent-0">
           {navItems.map(({ label, id }) => (
             <li
@@ -96,7 +94,6 @@ const Header = ({ className, ...props }: HeaderProps) => {
         </button>
       </div>
 
-      {/* --- 모바일 메뉴 (구조 수정됨) --- */}
       <ul
         className={cn(
           "mobile-menu",
@@ -111,7 +108,6 @@ const Header = ({ className, ...props }: HeaderProps) => {
           <li key={`header-item-m-${id}`}>
             <Link
               href={`#${id}`}
-              // 애니메이션을 위해 'mobile-menu-item' 클래스 유지
               className={cn("mobile-menu-item", "no-underline block py-2.5")}
               onClick={() => setIsExpanded(false)} // 메뉴 아이템 클릭 시 메뉴 닫기
             >

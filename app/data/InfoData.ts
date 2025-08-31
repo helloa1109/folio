@@ -7,7 +7,7 @@ export interface InfoItem {
 export const infoData: InfoItem[] = [
     {
         id: 1,
-        imageUrl: 'https://picsum.photos/seed/1/400/300',
+        imageUrl: '/images/info1.png',
         title: '끊임없는 학습',
         description: '새로운 기술과 트렌드를 지속적으로 학습하여 서비스에 적용하는 것을 즐깁니다.',
     },
