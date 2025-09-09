@@ -7,7 +7,7 @@ export default function InfoSection() {
     <section id="info" className="py-20">
       <div className="container mx-auto px-4">
         <h3 className='text-center text-blue'>역량 소개</h3>
-        <h2 className="text-3xl text-center mb-12">소개 관련 텍스트가 들어가는 자리</h2>
+        <h2 className="text-3xl text-center mb-12">사용자의 경험을 최우선으로 생각하며, 적극적으로 소통합니다.</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {infoData.map((item) => (
             <div
